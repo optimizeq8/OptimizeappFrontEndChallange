@@ -12,7 +12,7 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 
 ## Assignment tasks
 
-1. Create 4 screens that can be naviagted between all of them
+1. Create 4 screens that can be navigated between all of them
 2. First screen is a main Home Screen that contains 1 button that navigates to campaign creation screen and another button that navigates to campaign detail screen)
 3. Campaign creation
 
