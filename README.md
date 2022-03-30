@@ -20,15 +20,21 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
      - Ability to write and set the name for the campaign
      - Ability to choose an objective(i.e. options) from a list (website or brand_awareness)
      - Ability to submit the data to an api endpoint and passing the response data to the next screen (i.e. the campaign id, name and objective from the response)
+     - API : POST https://www.optimizekwtestingserver.com/testdemo/public/campaign
+            Params: {name: "test campaign", objective: "BRAND_AWARENESS"} 
    - Second Screen
      - Display the campaign name
      - Ability to choose a media file to be uploaded, should be restricted to a 9:16 aspect ratio and minimum resolution of 1080x1920
      - Based on the objective that was returned from the response in the previous screen there should be a field to enter a url if the objective was website or not if it's brand awareness. (Bonus if there is url validation)
      - Ability to submit the data to an api endpoint and return back to the Main Screen.
+      - API : POST https://www.optimizekwtestingserver.com/testdemo/public/creative
+            Params: {name: "test campaign", website_url: "https://www.optimizeapp.com", media: FILE Object} 
 
 4. Campaign details
    - Make a GET request to an API endpoint and retrieve a JSON data object
      - Display said data to fill in and design the detail screen including a graph/circle bar to show how much was spent from the lifetime budget
+     - API: GET https://www.optimizekwtestingserver.com/testdemo/public/campaigndetail/2238
+
 
 - Fonts and colors are to be used from the Assets folder
 - For the icons you can use any free website that provides icons like https://oblador.github.io/react-native-vector-icons/
