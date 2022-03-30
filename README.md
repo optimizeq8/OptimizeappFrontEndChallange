@@ -1,4 +1,4 @@
-# Optimizeapp React Native Challange
+# Optimizeapp React Native Challenge
 
 ## Introduction
 
