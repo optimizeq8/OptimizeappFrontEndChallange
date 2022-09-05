@@ -20,14 +20,14 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
      - Ability to choose an objective (website and brand_awareness) from a dropdown-list (Bonus: Make it similar to the design [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%201%20objectives.png))
      - Ability to submit the data to an api endpoint and save the response data (i.e. campaign name and objective) in a redux store, use that data on the next screen 
      - API : POST https://www.optimizekwtestingserver.com/testdemo/public/campaign 
-       - Params: {name: "test campaign", objective: "BRAND_AWARENESS" OR "WEBSITE"} 
+       - Request body: {name: "test campaign", objective: "BRAND_AWARENESS" OR "WEBSITE"} 
    - Second Screen(refrence: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%202.png) and [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%202%20with%20media.png))
      - Display the campaign name
      - Ability to choose a media file to be uploaded. (Bonus : Media should be restricted to a minimum resolution of 1080x1920)
      - Based on the selected objective in the previous screen, if the objective was "WEBSITE" a field should be shown to enter a website url (Bonus if there is url validation), or do not show the website feild if the objective is BRAND_AWARENESS.
      - Ability to submit the data to an api endpoint and navigate to the Campaign details Screen.
      - API : POST https://www.optimizekwtestingserver.com/testdemo/public/creative 
-       - Params: {name: "test campaign", website_url: "https://www.optimizeapp.com", media: FILE Object}
+       - Request body: {name: "test campaign", website_url: "https://www.optimizeapp.com", media: FILE Object}
      
 3. Campaign details (reference: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Detail%20Screen.png))
    - Make a GET request to an API endpoint and retrieve a JSON data object
