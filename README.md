@@ -32,6 +32,7 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 3. Campaign details (reference: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Detail%20Screen.png))
    - Make a GET request to an API endpoint and retrieve a JSON data object
      - Display said data to fill in and design the detail screen. (Optional: Ad Performnace section)
+     - API: GET https://www.optimizekwtestingserver.com/testdemo/public/campaigndetail/2238
 - Feel free to follow the screen templates as design references or use your own designs
 - Fonts and colors are provided from the Assets folder
 - For the icons you can use https://oblador.github.io/react-native-vector-icons/
