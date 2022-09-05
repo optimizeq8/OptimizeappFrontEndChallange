@@ -1,4 +1,4 @@
-# Optimizeapp React Native Challenge
+# Optimizeapp React Native Challange
 
 ## Introduction
 
@@ -8,40 +8,37 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 
 1. We value a **clean**, **simple**, working solution.
 2. Candidates must submit the project as a git repository. The repository must avoid containing the words `optimizeapp` and `challenge`.
-3. Application should run on both iOS and Android.
+3. A screen recording of the application should be attached in the repository.
 
 ## Assignment tasks
 
-1. Create 4 screens that can be navigated between all of them
-2. First screen is a main Home Screen that contains 1 button that navigates to campaign creation screen and another button that navigates to campaign detail screen)
-3. Campaign creation
+1. Create 3 screens that can be naviagted between all of them
+2. Campaign creation
 
-   - First screen
+   - First screen (reference: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%201.png))
      - Ability to write and set the name for the campaign
-     - Ability to choose an objective(i.e. options) from a list (website or brand_awareness)
-     - Ability to submit the data to an api endpoint and passing the response data to the next screen (i.e. the campaign id, name and objective from the response)
-     - API : POST https://www.optimizekwtestingserver.com/testdemo/public/campaign
-            Params: {name: "test campaign", objective: "BRAND_AWARENESS"} 
-   - Second Screen
+     - Ability to choose an objective (website and brand_awareness) from a dropdown-list (Bonus: Make it similar to the design [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%201%20objectives.png))
+     - Ability to submit the data to an api endpoint and save the response data (i.e. campaign name and objective) in a redux store, use that data on the next screen 
+     - API : POST https://www.optimizekwtestingserver.com/testdemo/public/campaign 
+       - Params: {name: "test campaign", objective: "BRAND_AWARENESS" OR "WEBSITE"} 
+   - Second Screen(refrence: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%202.png) and [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Creation%202%20with%20media.png))
      - Display the campaign name
-     - Ability to choose a media file to be uploaded, should be restricted to a 9:16 aspect ratio and minimum resolution of 1080x1920
-     - Based on the objective that was returned from the response in the previous screen there should be a field to enter a url if the objective was website or not if it's brand awareness. (Bonus if there is url validation)
-     - Ability to submit the data to an api endpoint and return back to the Main Screen.
-      - API : POST https://www.optimizekwtestingserver.com/testdemo/public/creative
-            Params: {name: "test campaign", website_url: "https://www.optimizeapp.com", media: FILE Object} 
-
-4. Campaign details
+     - Ability to choose a media file to be uploaded. (Bonus : Media should be restricted to a minimum resolution of 1080x1920)
+     - Based on the selected objective in the previous screen, if the objective was "WEBSITE" a field should be shown to enter a website url (Bonus if there is url validation), or do not show the website feild if the objective is BRAND_AWARENESS.
+     - Ability to submit the data to an api endpoint and navigate to the Campaign details Screen.
+     - API : POST https://www.optimizekwtestingserver.com/testdemo/public/creative 
+       - Params: {name: "test campaign", website_url: "https://www.optimizeapp.com", media: FILE Object}
+     
+3. Campaign details (reference: [here](https://github.com/optimizeq8/OptimizeappFrontEndChallenge/blob/main/Screen%20Templates/Campaign%20Detail%20Screen.png))
    - Make a GET request to an API endpoint and retrieve a JSON data object
-     - Display said data to fill in and design the detail screen including a graph/circle bar to show how much was spent from the lifetime budget
-     - API: GET https://www.optimizekwtestingserver.com/testdemo/public/campaigndetail/2238
-
-
-- Fonts and colors are to be used from the Assets folder
-- For the icons you can use any free website that provides icons like https://oblador.github.io/react-native-vector-icons/
-- The required libraries to be used in this assignment are: react-navigation v4, Axios for api requests and Redux for actions and reducers
+     - Display said data to fill in and design the detail screen. (Optional: Ad Performnace section)
+- Feel free to follow the screen templates as design references or use your own designs
+- Fonts and colors are provided from the Assets folder
+- For the icons you can use https://oblador.github.io/react-native-vector-icons/
+- The required libraries to be used in this assignment are: Native-Base for icons, react-navigation, Axios for api requests and Redux for actions and reducers
 - Feel free to use any other libraries that might help you with the tasks
 
-## Bonus Tasks
+## Advantageous Bonus Task
 
 1. Having UI tests is a strong bonus.
 
